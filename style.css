@@ -1,0 +1,188 @@
+
+#hero {
+    background-color: #040851;
+    color: #333;
+}
+
+/* Fullscreen Page Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Page Styling */
+#page-1, #page-2 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Page 2: Welcome Page */
+#page-2 {
+    background-color: #e5e4f5;
+    color: #1e1e2c;
+    display: flex;
+    flex-direction: row-reverse; /* Portrait on the right */
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+#page-2 .text-content {
+    flex: 1;
+    text-align: left;
+}
+
+#page-2 h1 {
+    font-size: 6rem;
+    margin-bottom: 15px;
+    color: #272749;
+}
+
+#page-2 p {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+#page-2 .cta-btn {
+    background-color: #ffb3b3;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 3rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+#page-2 .cta-btn:hover {
+    background-color: #ff9494;
+}
+
+#page-2 img {
+    flex: 1;
+    max-width: 800px;
+    max-height: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Page 1: My Approach */
+#page-1 {
+    background-color: #fff;
+    color: #1e1e2c;
+    display: flex;
+    flex-direction: row; /* Keep the image on the right */
+    justify-content: space-between;
+    align-items: stretch; /* Stretch content and image to full height */
+    padding: 0; /* Remove padding for clean layout */
+    height: 100vh; /* Full viewport height */
+}
+#page-1 h2 {
+    font-size: 4rem;
+    margin-bottom: 100px;
+    color: #272749;
+}
+
+#page-1 h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #272749;
+}
+
+#page-1 p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+#page-1 .content {
+    flex: 1; /* Content takes equal space */
+    max-width: 50%; /* Limit content width to 50% */
+    text-align: left;
+    padding: 40px; /* Add padding for text spacing */
+    box-sizing: border-box;
+}
+
+#page-1 img {
+    flex: 1; /* Allow image to grow */
+    width: 50%; /* Image takes exactly 50% of the width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 0; /* Remove border radius for full coverage */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #page-1 {
+        flex-direction: column; /* Stack content and image vertically */
+        height: auto; /* Allow height to adjust */
+    }
+
+    #page-1 .content, 
+    #page-1 img {
+        max-width: 100%; /* Full width for both content and image */
+        width: 100%; /* Ensure full width for mobile */
+        height: auto; /* Adjust image height */
+    }
+}
+
+
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    #page-2 {
+        flex-direction: column-reverse; /* Portrait below text */
+        text-align: center;
+    }
+
+    #page-2 .text-content, #page-2 img {
+        max-width: 100%;
+    }
+
+    #page-2 h1 {
+        font-size: 3rem;
+    }
+
+    #page-2 p {
+        font-size: 1.5rem;
+    }
+
+    #page-2 {
+        flex-direction: column;
+    }
+}
+
+.progress-bar {
+    display: block;
+    position: relative;
+    background-color: #ddd; /* Background color for the unfilled section */
+    height: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.progress-bar span {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.progress {
+    display: block;
+    height: 100%;
+    background-color: #00ff00; /* Green fill color */
+    border-radius: 10px;
+}
