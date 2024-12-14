@@ -79,6 +79,7 @@
     background-color: #fff;
     color: #1e1e2c;
     display: flex;
+    min-height: 100vh;
     flex-direction: row; /* Keep the image on the right */
     justify-content: space-between;
     align-items: stretch; /* Stretch content and image to full height */
@@ -87,19 +88,24 @@
 }
 #page-1 h2 {
     font-size: 4rem;
-    margin-bottom: 100px;
+    margin-bottom: 190px;
     color: #272749;
 }
 
 #page-1 h3 {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 49px;
     color: #272749;
 }
 
+
+#para2
+{
+margin-bottom: 10px;
+display: block;
+}
 #page-1 p {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 2.3rem;
     color: #444;
 }
 #page-1 .content {
